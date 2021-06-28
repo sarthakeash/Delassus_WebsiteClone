@@ -1,0 +1,801 @@
+.carousel-inner {
+      width: 600%;
+}
+
+@keyframes fadeIn {
+      0% {
+            opacity: 0.5;
+      }
+      100% {
+            opacity: 1;
+      }
+}
+
+body {
+      background-color: rgb(231, 82, 77);
+      font-family: "Nunito Sans", sans-serif;
+}
+
+.bulb {
+      margin-left: 2%;
+      margin-top: 30px;
+      width: 10%;
+      color: white;
+      position: absolute;
+}
+
+.item1 {
+      width: 14%;
+
+      margin-left: 26%;
+      margin-top: 10%;
+      position: absolute;
+      display: inline-block;
+}
+
+.item2 {
+      width: 18%;
+
+      margin-top: 24%;
+      margin-left: 17%;
+      position: absolute;
+      display: inline;
+      z-index: -2;
+}
+
+.item3 {
+      width: 18%;
+
+      margin-top: 25%;
+
+      margin-left: 70%;
+      position: absolute;
+      display: inline;
+}
+
+.item4 {
+      width: 20%;
+
+      margin-left: 26%;
+      margin-top: 10%;
+      position: absolute;
+      display: inline-block;
+      z-index: -2;
+}
+
+.item5 {
+      width: 18%;
+
+      margin-top: 24%;
+      margin-left: 17%;
+      position: absolute;
+      display: inline;
+      z-index: -2;
+}
+
+.item6 {
+      width: 10%;
+
+      margin-top: 30%;
+      margin-left: 30%;
+
+      position: absolute;
+}
+
+.item7 {
+      width: 15%;
+
+      margin-top: 32%;
+
+      margin-left: 68%;
+      position: absolute;
+      display: inline;
+
+      z-index: 1;
+}
+
+.item8 {
+      width: 40%;
+
+      margin-left: 20%;
+      margin-top: 4%;
+      position: absolute;
+      display: inline-block;
+}
+
+.item9 {
+      width: 30%;
+
+      margin-top: 18%;
+
+      margin-left: 60%;
+      position: absolute;
+      display: inline;
+
+      z-index: 1;
+}
+
+.item10 {
+      width: 18%;
+
+      margin-left: 26%;
+      margin-top: 10%;
+      position: absolute;
+      display: inline-block;
+}
+.item11 {
+      width: 15%;
+
+      margin-top: 24%;
+      margin-left: 18%;
+      position: absolute;
+      display: inline;
+      z-index: 1;
+}
+.item12 {
+      width: 15%;
+
+      margin-top: 32%;
+
+      margin-left: 68%;
+      position: absolute;
+      display: inline;
+
+      z-index: 1;
+}
+.item13 {
+      width: 20%;
+
+      margin-left: 26%;
+      margin-top: 8%;
+      position: absolute;
+      display: inline-block;
+}
+.item14 {
+      width: 35%;
+
+      margin-top: 25%;
+
+      margin-left: 45%;
+      position: absolute;
+      display: inline;
+
+      z-index: 1;
+}
+
+.head {
+      position: absolute;
+      z-index: 1;
+}
+
+.textl {
+      position: absolute;
+      color: white;
+      font-size: 11vw;
+      left: 35%;
+      top: 160px;
+      z-index: 1;
+}
+.texto {
+      position: absolute;
+      color: white;
+      font-size: 12vw;
+      left: 35%;
+      top: 180px;
+}
+.texta {
+      position: absolute;
+      color: white;
+      font-size: 9vw;
+      left: 30%;
+      top: 120px;
+      z-index: 1;
+      font-weight: 600;
+}
+
+.textv {
+      position: absolute;
+      color: white;
+      font-size: 12vw;
+      left: 30%;
+      top: 150px;
+      z-index: 1;
+}
+.textf {
+      position: absolute;
+      color: white;
+      font-size: 12vw;
+      left: 30%;
+      top: 150px;
+      z-index: 1;
+}
+
+li {
+      padding-left: 20px;
+      padding-right: 8px;
+}
+
+.fruitmenu {
+      display: flex;
+      flex-direction: row;
+}
+
+.fruitext {
+      margin-top: -10%;
+      position: absolute;
+      font-size: 1.2vw;
+      font-weight: bolder;
+      color: white;
+      z-index: 0;
+      cursor: pointer;
+      text-decoration: none;
+}
+
+.tomato {
+      left: 16%;
+      opacity: 1;
+}
+
+.citrus {
+      left: 30%;
+      opacity: 0.4;
+}
+.grapes {
+      left: 37%;
+      opacity: 0.4;
+}
+.avocados {
+      left: 44%;
+      opacity: 0.4;
+}
+.flowers {
+      left: 52%;
+      opacity: 0.4;
+}
+
+.transition-timer-carousel-progress-bar {
+      height: 2px;
+      background-color: white;
+      width: 0%;
+      margin-top: -7%;
+      margin-left: 17%;
+      border: none;
+      z-index: -1;
+      position: absolute;
+      transition: ease-out 0.4s;
+}
+.transition-timer-carousel-progress-bar.animate {
+      -webkit-transition: width 8s ease-out;
+      -moz-transition: width 8s ease-out;
+      -o-transition: width 8s ease-out;
+      transition: width 8s ease-out;
+}
+
+.reference-bar {
+      height: 2px;
+      background-color: rgb(242, 242, 242, 0.1);
+      width: 5%;
+      margin-top: -7%;
+      margin-left: 17%;
+      border: none;
+      z-index: 5;
+      position: absolute;
+      transition: ease-out 0.4s;
+}
+
+:root {
+      --overlay-color: rgba(24, 39, 51, 0.85);
+      --menu-speed: 0.75s;
+}
+
+.container {
+      max-width: 960px;
+      margin: auto;
+      overflow: hidden;
+      padding: 0 3rem;
+}
+
+.showcase {
+      background: var(--primary-color);
+      color: #fff;
+      height: 100vh;
+      position: relative;
+}
+
+.showcase:before {
+      content: "";
+      background: url("https://images.pexels.com/photos/533923/pexels-photo-533923.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260")
+            no-repeat center center/cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+}
+
+.showcase .showcase-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 100%;
+}
+
+.showcase h1 {
+      font-size: 4rem;
+}
+
+.showcase p {
+      font-size: 1.3rem;
+}
+
+.btn {
+      display: inline-block;
+      border: none;
+      background: var(--primary-color);
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      margin-top: 1rem;
+      transition: opacity 1s ease-in-out;
+      text-decoration: none;
+}
+
+.btn:hover {
+      opacity: 0.7;
+}
+
+.menu-wrap {
+      position: fixed;
+      top: 0;
+      right: 6%;
+      z-index: 1;
+}
+
+.menu-wrap .toggler {
+      position: absolute;
+      top: 0;
+      left: 0px;
+      z-index: 2;
+      cursor: pointer;
+      width: 50px;
+      height: 50px;
+      opacity: 0;
+}
+
+.menu-wrap .hamburger {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 60px;
+      height: 60px;
+      padding: 1rem;
+      background: var(--primary-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.menu-wrap .hamburger > div {
+      position: relative;
+      flex: none;
+      width: 100%;
+      height: 2px;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.4s ease;
+}
+
+.menu-wrap .hamburger > div::before,
+.menu-wrap .hamburger > div::after {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      top: -10px;
+      width: 100%;
+      height: 2px;
+      background: inherit;
+}
+
+.menu-wrap .hamburger > div::after {
+      top: 10px;
+}
+
+.menu-wrap .toggler:checked + .hamburger > div {
+      transform: rotate(135deg);
+}
+
+.menu-wrap .toggler:checked + .hamburger > div:before,
+.menu-wrap .toggler:checked + .hamburger > div:after {
+      top: 0;
+      transform: rotate(90deg);
+}
+
+.menu-wrap .toggler:checked:hover + .hamburger > div {
+      transform: rotate(225deg);
+}
+
+.menu-wrap .toggler:checked ~ .menu {
+      visibility: visible;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div {
+      transform: scale(1);
+      transition-duration: var(--menu-speed);
+}
+
+.menu-wrap .toggler:checked ~ .menu > div > div {
+      opacity: 1;
+      transition: opacity 0.4s ease 0.4s;
+}
+
+.menu-wrap .menu {
+      position: fixed;
+      top: 0px;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      visibility: hidden;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.menu-wrap .menu > div {
+      background-color: black;
+      border-radius: 50%;
+      width: 300vw;
+      height: 300vw;
+      display: flex;
+      flex: none;
+      align-items: center;
+      justify-content: center;
+      transform: scale(0);
+      transition: all 0.4s ease;
+      margin-left: 92%;
+      margin-top: -50%;
+      opacity: 0.95;
+}
+
+.menu-wrap .menu > div > div {
+      margin-top: 350px;
+      margin-left: -30%;
+      max-width: 90vw;
+      height: 0vh;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+}
+
+.menu-wrap .menu > div > div > ul > li {
+      list-style: none;
+      color: #fff;
+      font-size: 10px;
+      padding: 1.5rem;
+      opacity: 1;
+}
+
+@keyframes aro {
+      from {
+            margin-top: 600px;
+      }
+      to {
+            margin-top: 400px;
+      }
+}
+
+.menu-wrap .menu > div > div > ul > li > a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.4s ease;
+}
+
+.imgs {
+      margin-left: -10%;
+      width: 300px;
+      height: 400px;
+      background-color: rgb(254, 210, 0);
+      background-repeat: no-repeat;
+      margin-top: -320px;
+      position: absolute;
+}
+
+.content2 {
+      position: absolute;
+      margin-top: -8%;
+      margin-left: 8%;
+      font-size: 2.5vw;
+}
+
+.content2 li {
+      margin-top: 30px;
+      opacity: 1;
+}
+
+.content2 img {
+      width: 20%;
+}
+
+.bulb2 {
+      z-index: 0;
+      width: 70%;
+      margin-top: 10%;
+      position: absolute;
+      margin-left: 15%;
+      opacity: 0.5;
+}
+
+.pro {
+      z-index: 2;
+      width: 80%;
+      margin-top: 10%;
+      position: absolute;
+      visibility: hidden;
+}
+
+#pro2,#pro3,#pro4,#pro5,#pro6,#pro7,#pro8,#pro9{
+  margin-left: 10%;
+}
+
+.fruitup {
+      visibility: visible;
+      animation: final 2s;
+}
+
+@keyframes final {
+      from {
+            margin-top: 35%;
+      }
+      to {
+            margin-top: 10%;
+      }
+}
+
+.carousel-indicators {
+      margin-left: 10%;
+      z-index: 1;
+}
+
+a {
+      text-decoration: none;
+      left: 16%;
+      font-size: 1.2vw;
+      font-weight: bolder;
+      color: white;
+
+      z-index: 0;
+}
+
+a:hover {
+      text-decoration: none;
+      color: white;
+}
+
+
+.cta {
+      position: absolute;
+      margin: auto;
+      padding: 17px 26px;
+      transition: all 0.2s ease;
+      margin-top: -11.2%;
+      left: 60%;
+      text-decoration: none;
+      background-color: rgb(242, 242, 242, 0.1);
+      border-radius: 28px;
+      height: 56px;
+}
+
+.cta:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0%;
+      display: block;
+      border-radius: 28px;
+      background-color: rgb(206, 10, 32);
+      width: 100%;
+      height: 56px;
+      transition: all 0.3s ease;
+}
+
+
+.cta.c1:before {
+      background-color: rgb(206, 10, 32);
+}
+.cta.c2:before {
+      background-color: rgb(254, 183, 1);
+}
+.cta.c3:before {
+      background-color: rgb(135, 10, 49);
+}
+.cta.c4:before {
+      background-color: rgb(253, 114, 109);
+}
+.cta.c5:before {
+      background-color: rgb(253, 85, 0);
+}
+
+.cta.c1:hover:before {
+      background-color: rgb(206, 10, 32);
+}
+.cta.c2:hover:before {
+      background-color: rgb(254, 183, 1);
+}
+.cta.c3:hover:before {
+      background-color: rgb(135, 10, 49);
+}
+.cta.c4:hover:before {
+      background-color: rgb(253, 114, 109);
+}
+.cta.c5:hover:before {
+      background-color: rgb(253, 85, 0);
+}
+
+
+.cta span {
+      position: relative;
+      font-size: 16px;
+      line-height: 18px;
+      font-weight: 900;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      vertical-align: middle;
+}
+
+.cta svg {
+      position: relative;
+      top: 0;
+      margin-left: 10px;
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke: white;
+      stroke-width: 2;
+      transform: translateX(-5px);
+      transition: all 0.3s ease;
+}
+
+
+.cta:hover:before {
+      width: 56px;
+      background: rgba(206, 10, 32);
+      text-decoration: none;
+      margin-left: 71%;
+}
+
+.cta:hover svg {
+      transform: translateX(0);
+      text-decoration: none;
+}
+
+.cta:active {
+      transform: scale(0.96);
+      text-decoration: none;
+}
+
+
+
+@media (max-width:650px) {
+  .fruitmenu{
+    display: none;
+  }
+
+
+
+
+.cta{
+
+ position: absolute;
+ top: 90%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+}
+
+
+.cta span{
+  font-size: 15px;
+}
+
+  .cta svg{
+    margin-left: 15px;
+    top: 4px;
+  }
+
+
+
+.transition-timer-carousel-progress-bar{
+display: none;
+}
+
+.carousel-item{
+  top: 25%;
+}
+
+
+.item1{
+width: 30%;
+}
+
+.item2{
+  width: 35%;
+  margin-left: 1%;
+}
+.item3{
+  width: 30%;
+}
+.item4{
+  width: 30%;
+}
+
+.item5{
+  width: 35%;
+}
+.item6{
+  width: 20%;
+  margin-top: 55%;
+}
+
+.item7{
+  width: 20%;
+}
+.item8{
+  width: 55%;
+  margin-left: 10%;
+}
+.item9{
+  width: 55%;
+  margin-left: 45%;
+  z-index: -1;
+}
+
+
+.item10{
+width: 30%;
+z-index: -1;
+}
+.item11{
+  width: 30%;
+  z-index: -1;
+}
+.item12{
+  width: 30%;
+  z-index: -1;
+}
+
+.item13{
+  width: 40%;
+}
+
+.item14{
+  width: 50%;
+  margin-top: 35%;
+  z-index: -1;
+}
+.bulb{
+  width: 20%;
+}
+
+
+.menu-wrap{
+  right: 20%;
+  top: 6%;
+}
+
+.imgs{
+  display: none;
+}
+
+
+
+
+
+
+
+}
+
+
+

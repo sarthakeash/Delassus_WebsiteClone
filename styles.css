@@ -24,6 +24,9 @@ body {
       position: absolute;
 }
 
+
+
+/* fruits on slides  */
 .item1 {
       width: 14%;
 
@@ -168,6 +171,10 @@ body {
       z-index: 1;
 }
 
+
+
+/* text in slides  */
+
 .textl {
       position: absolute;
       color: white;
@@ -219,6 +226,9 @@ li {
       display: flex;
       flex-direction: row;
 }
+
+
+/* buttons */
 
 .fruitext {
       margin-top: -10%;
@@ -346,6 +356,9 @@ li {
       opacity: 0.7;
 }
 
+
+/* menu button  */
+
 .menu-wrap {
       position: fixed;
       top: 0;
@@ -460,7 +473,6 @@ li {
       margin-left: 92%;
       margin-top: -50%;
       opacity: 0.95;
-    
 }
 
 .menu-wrap .menu > div > div {
@@ -470,7 +482,6 @@ li {
       height: 0vh;
       opacity: 0;
       transition: opacity 0.5s ease;
-      
 }
 
 .menu-wrap .menu > div > div > ul > li {
@@ -479,7 +490,6 @@ li {
       font-size: 10px;
       padding: 1.5rem;
       opacity: 1;
-
 }
 
 @keyframes aro {
@@ -585,6 +595,9 @@ a:hover {
       color: white;
 }
 
+/* cta button  */
+
+
 .cta {
       position: absolute;
       margin: auto;
@@ -683,6 +696,12 @@ a:hover {
       text-decoration: none;
 }
 
+
+
+
+/* for mobile */
+
+
 @media (max-width: 650px) {
       .fruitmenu {
             display: none;
@@ -702,7 +721,6 @@ a:hover {
 
       .cta svg {
             margin-left: 15px;
-      
       }
 
       .transition-timer-carousel-progress-bar {
@@ -789,8 +807,6 @@ a:hover {
             margin-top: -132%;
             width: 400vw;
             height: 400vw;
-        
-            
       }
       .menu-wrap .menu > div > div > ul > li {
             padding: 0.8rem;
@@ -807,10 +823,10 @@ a:hover {
       .content1 {
             margin-top: -140%;
       }
+
       .content2 {
             margin-top: 0%;
             margin-left: 0%;
-     
       }
 
       .impl {
@@ -822,13 +838,8 @@ a:hover {
       .reference-bar {
             display: none;
       }
-      
-      
-      
-.content2 img {
+
+      .content2 img {
             width: 10%;
       }
-      
 }
-
-

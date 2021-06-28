@@ -537,8 +537,15 @@ li {
       visibility: hidden;
 }
 
-#pro2,#pro3,#pro4,#pro5,#pro6,#pro7,#pro8,#pro9{
-  margin-left: 10%;
+#pro2,
+#pro3,
+#pro4,
+#pro5,
+#pro6,
+#pro7,
+#pro8,
+#pro9 {
+      margin-left: 10%;
 }
 
 .fruitup {
@@ -575,7 +582,6 @@ a:hover {
       color: white;
 }
 
-
 .cta {
       position: absolute;
       margin: auto;
@@ -601,7 +607,6 @@ a:hover {
       height: 56px;
       transition: all 0.3s ease;
 }
-
 
 .cta.c1:before {
       background-color: rgb(206, 10, 32);
@@ -635,7 +640,6 @@ a:hover {
       background-color: rgb(253, 85, 0);
 }
 
-
 .cta span {
       position: relative;
       font-size: 16px;
@@ -659,7 +663,6 @@ a:hover {
       transition: all 0.3s ease;
 }
 
-
 .cta:hover:before {
       width: 56px;
       background: rgba(206, 10, 32);
@@ -677,125 +680,139 @@ a:hover {
       text-decoration: none;
 }
 
+@media (max-width: 650px) {
+      .fruitmenu {
+            display: none;
+      }
 
+      .cta {
+            position: absolute;
+            top: 90%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+      }
 
-@media (max-width:650px) {
-  .fruitmenu{
-    display: none;
-  }
+      .cta span {
+            font-size: 15px;
+      }
 
+      .cta svg {
+            margin-left: 15px;
+            top: 4px;
+      }
 
+      .transition-timer-carousel-progress-bar {
+            display: none;
+      }
 
+      .carousel-item {
+            top: 25%;
+      }
 
-.cta{
+      .item1 {
+            width: 30%;
+      }
 
- position: absolute;
- top: 90%;
- left: 50%;
- transform: translate(-50%, -50%);
+      .item2 {
+            width: 35%;
+            margin-left: 1%;
+      }
+      .item3 {
+            width: 30%;
+      }
+      .item4 {
+            width: 30%;
+      }
+
+      .item5 {
+            width: 35%;
+      }
+      .item6 {
+            width: 20%;
+            margin-top: 55%;
+      }
+
+      .item7 {
+            width: 20%;
+      }
+      .item8 {
+            width: 55%;
+            margin-left: 10%;
+      }
+      .item9 {
+            width: 55%;
+            margin-left: 45%;
+            z-index: -1;
+      }
+
+      .item10 {
+            width: 30%;
+            z-index: -1;
+      }
+      .item11 {
+            width: 30%;
+            z-index: -1;
+      }
+      .item12 {
+            width: 30%;
+            z-index: -1;
+      }
+
+      .item13 {
+            width: 40%;
+      }
+
+      .item14 {
+            width: 50%;
+            margin-top: 35%;
+            z-index: -1;
+      }
+      .bulb {
+            width: 20%;
+      }
+
+      .menu-wrap {
+            right: 20%;
+            top: 6%;
+      }
+
+      .imgs {
+            display: none;
+      }
+
+      .menu-wrap .menu > div {
+            margin-left: 72%;
+            margin-top: -132%;
+            width: 400vw;
+            height: 400vw;
+      }
+      .menu-wrap .menu > div > div > ul > li {
+            padding: 0.8rem;
+      }
+
+      .menu-wrap .menu > div > div > ul > li a {
+            font-size: 20px;
+      }
+
+      .content2 a {
+            font-size: 18px;
+      }
+
+      .content1 {
+            margin-top: -140%;
+      }
+      .content2 {
+            margin-top: 0%;
+            margin-left: 0%;
+      }
+
+      .impl {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+      }
+
+      .reference-bar {
+            display: none;
+      }
 }
-
-
-.cta span{
-  font-size: 15px;
-}
-
-  .cta svg{
-    margin-left: 15px;
-    top: 4px;
-  }
-
-
-
-.transition-timer-carousel-progress-bar{
-display: none;
-}
-
-.carousel-item{
-  top: 25%;
-}
-
-
-.item1{
-width: 30%;
-}
-
-.item2{
-  width: 35%;
-  margin-left: 1%;
-}
-.item3{
-  width: 30%;
-}
-.item4{
-  width: 30%;
-}
-
-.item5{
-  width: 35%;
-}
-.item6{
-  width: 20%;
-  margin-top: 55%;
-}
-
-.item7{
-  width: 20%;
-}
-.item8{
-  width: 55%;
-  margin-left: 10%;
-}
-.item9{
-  width: 55%;
-  margin-left: 45%;
-  z-index: -1;
-}
-
-
-.item10{
-width: 30%;
-z-index: -1;
-}
-.item11{
-  width: 30%;
-  z-index: -1;
-}
-.item12{
-  width: 30%;
-  z-index: -1;
-}
-
-.item13{
-  width: 40%;
-}
-
-.item14{
-  width: 50%;
-  margin-top: 35%;
-  z-index: -1;
-}
-.bulb{
-  width: 20%;
-}
-
-
-.menu-wrap{
-  right: 20%;
-  top: 6%;
-}
-
-.imgs{
-  display: none;
-}
-
-
-
-
-
-
-
-}
-
-
-

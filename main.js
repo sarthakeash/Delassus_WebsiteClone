@@ -90,6 +90,8 @@ case "e5": {
   })
 
 
+// hover to move 
+
 var k;
 
 for(k=1; k<15; k++){

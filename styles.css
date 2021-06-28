@@ -588,7 +588,7 @@ a:hover {
 .cta {
       position: absolute;
       margin: auto;
-      padding: 17px 26px;
+      padding: 15px 26px;
       transition: all 0.2s ease;
       margin-top: -11.2%;
       left: 60%;
@@ -674,7 +674,7 @@ a:hover {
 }
 
 .cta:hover svg {
-      transform: translateX(0);
+      transform: translateX(3px);
       text-decoration: none;
 }
 
@@ -693,6 +693,7 @@ a:hover {
             top: 90%;
             left: 50%;
             transform: translate(-50%, -50%);
+            padding: 18px 26px;
       }
 
       .cta span {
@@ -701,7 +702,7 @@ a:hover {
 
       .cta svg {
             margin-left: 15px;
-            top: 4px;
+      
       }
 
       .transition-timer-carousel-progress-bar {
